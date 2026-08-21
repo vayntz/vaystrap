@@ -1693,7 +1693,7 @@ neonGrad.Parent = neonBar
 
 local function setupAutoExecute()
     if type(queue_on_teleport) == "function" then
-        local url = "https://raw.githubusercontent.com/vayntz/vaystrap/refs/heads/main/vayntzstrap"
+        local url = "https://raw.githubusercontent.com/vayntz/vaystrap/refs/heads/main/vayntzstrap.lua"
         local payload = 'task.wait(4) loadstring(game:HttpGet("' .. url .. '"))()'
         pcall(function() queue_on_teleport(payload) end)
     end
@@ -2054,7 +2054,7 @@ logoHolder.Parent = header
 local logoLabel = Instance.new("ImageLabel")
 logoLabel.Size = UDim2.new(1, 0, 1, 0)
 logoLabel.BackgroundTransparency = 1
-logoLabel.Image = "rbxassetid://130959309383941"
+logoLabel.Image = "rbxassetid://136293924276809"
 logoLabel.ScaleType = Enum.ScaleType.Fit
 logoLabel.ZIndex = 210
 logoLabel.Parent = logoHolder
@@ -2944,7 +2944,7 @@ local heroDesc = Instance.new("TextLabel")
 heroDesc.Size = UDim2.new(1, -20, 0, 14)
 heroDesc.Position = UDim2.new(0, 10, 0, 96)
 heroDesc.BackgroundTransparency = 1
-heroDesc.Text = "Best fflag injector for Windows / Mobile"
+heroDesc.Text = "Best fflag injector for Mobile"
 heroDesc.TextColor3 = C.dim
 heroDesc.Font = Enum.Font.Gotham
 heroDesc.TextSize = 12
@@ -3046,11 +3046,7 @@ devsTitleLbl.ZIndex = 145
 devsTitleLbl.Parent = devsCard
 
 local DEVS = {
-    { name = "Leito",   role = "Owner",     id = "1086319417761202256" },
-    { name = "Pepper",  role = "Developer", id = "1099336555883135037" },
-    { name = "Lean",    role = "Developer", id = "909416193893486602"  },
-    { name = "Dem",     role = "Developer", id = nil                   },
-    { name = "Winnie",  role = "Developer", id = "1267942307269836912" },
+    { name = "Vayntz",   role = "Owner",     id = "1086319417761202256" },
 }
 
 for di, dev in ipairs(DEVS) do
@@ -3146,8 +3142,8 @@ linksTitleLbl.ZIndex = 145
 linksTitleLbl.Parent = linksCard
 
 local LINKS = {
-    { label = "Discord", url = "https://discord.gg/DFr27GtgA3",     svg = SVG_DISCORD },
-    { label = "YouTube", url = "https://youtube.com/@Leito_qnm1",   svg = SVG_YOUTUBE },
+    { label = "Discord", url = "https://discord.gg/hNEYh7sEhd",     svg = SVG_DISCORD },
+    { label = "YouTube", url = "https://youtube.com/@vayntz",   svg = SVG_YOUTUBE },
     { label = "GitHub",  url = "https://github.com/Vaystrap",     svg = SVG_GITHUB  },
 }
 
