@@ -1981,8 +1981,8 @@ end
 
 local frame = Instance.new("Frame")
 frame.Name = "VaystrapWindow"
-frame.Size = UDim2.fromOffset(WIN_W, WIN_H)
-frame.Position = UDim2.new(0.5, -WIN_W / 2, 0.5, -WIN_H / 2)
+frame.Size = UDim2.new(1, 0, 1, 0) 
+frame.Position =  UDim2.new(0, 0, 0, 0)
 frame.BackgroundColor3 = C.bg
 frame.BorderSizePixel = 0
 frame.ClipsDescendants = false
@@ -3203,8 +3203,8 @@ miniLogoImg.ZIndex = 50001
 miniLogoImg.Parent = miniLogoBtn
 local minimized = false
 local maximized = false
-local savedSize = UDim2.fromOffset(WIN_W, WIN_H)
-local savedPos = UDim2.new(0.5, -WIN_W / 2, 0.5, -WIN_H / 2)
+local savedSize = UDim2.new(1, 0, 1, 0)
+local savedPos = UDim2.new(0, 0, 0, 0)
 
 minimizeBtn.MouseButton1Click:Connect(function()
     minimized = true
