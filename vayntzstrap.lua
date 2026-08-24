@@ -2261,12 +2261,12 @@ end
 
 local editorSection = sections["editor"]
 local editorW = WIN_W - SIDEBAR_W
-local editorBoxH = WIN_H - HEADER_H - 100
+local editorBoxH = WIN_H - HEADER_H - 120
 
 sectionLabel(editorSection, "EDIT FFLAGS", PAD)
 
 local editorFrame = Instance.new("Frame")
-editorFrame.Size = UDim2.new(1, -PAD * 2, 0, editorBoxH)
+editorFrame.Size = UDim2.new(1, -PAD * 2, 1, -70)  -- Leave 70px for buttons
 editorFrame.Position = UDim2.new(0, PAD, 0, 26)
 editorFrame.BackgroundColor3 = C.surface2
 editorFrame.BorderSizePixel = 0
@@ -2348,7 +2348,7 @@ local function actionBtn(parent, text, sym, x, y, w, h, primary)
     return b, tl
 end
 
-local btnAreaY = editorBoxH + 34
+local btnAreaY = editorBoxH + 34  -- Position below editor
 local btnW = math.floor((editorW - PAD * 5) / 4)
 
 local applyBtn, _ = actionBtn(editorSection, "Apply", "▶️", PAD, btnAreaY, btnW, 42, true)
@@ -3004,7 +3004,7 @@ local FEATURES = {
     "Minimal black & white UI with section animations",
     "In-UI toast notifications with bell animation",
     "Auto Rejoin and Reapply toggles",
-    "Mobile & PC compatible drag-and-drop window",
+    "Mobile compatible drag-and-drop window",
 }
 
 for fi, feat in ipairs(FEATURES) do
