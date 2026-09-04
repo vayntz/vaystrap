@@ -1,5 +1,5 @@
 -- Vaystrap Mobile V1
---- if getgenv().VaystrapLastLoad then
+if getgenv().VaystrapLastLoad then
     if os.clock() - getgenv().VaystrapLastLoad < 5 then
         return 
     end
