@@ -1,3 +1,3 @@
 # vaystrap
 
-vaystrap no more gonna be on
+NO UPDATES
